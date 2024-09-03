@@ -43,7 +43,7 @@ public class BaseTest extends ObjectLibrary {
 		webdriverlibrary.maximizeBrowser();
 
 		// Step3:Navigate to the Application via URL
-		webdriverlibrary.navigateToApp("file:///C:/Users/Sai%20Kumar/eclipse-workspace/com.myntrajio/src/test/resources/Webpage/webpage.html");
+		webdriverlibrary.navigateToApp("file:///C:/Users/Sai%20Kumar/Downloads/webpage%20(2).html");
 
 		Reporter.log("BrowserSetup :"+bname+"Sucessful", true);
 	}

@@ -44,7 +44,7 @@ public class LearningAdvanceReport {
 	    if (true==true) {
 			test.log(Status.PASS,"Step4:verified the WebElement Displayed Successfull");
 		}else {
-			test.log(Status.FAIL,"Step4:verified the WebElement Not Displayed Successfull");
+			test.log(Status.FAIL,"Step4:verified the WebElement Not Displayed ");
 			
 		}
 	    test.log(Status.SKIP,"step5:Element is Hidden");

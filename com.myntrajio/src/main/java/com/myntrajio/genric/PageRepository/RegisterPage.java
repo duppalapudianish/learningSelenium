@@ -25,12 +25,14 @@ public class RegisterPage {
 	@FindBy(id="mobile")
 	private WebElement mobiletextfield;
 	
+	@FindBy(id="male")
+	private WebElement malecheckbox;
+	
 	@FindBy(id="manali")
 	private WebElement manalicheckbox;
 	
 	@FindBy(id="feedback")
 	private WebElement feedbacktextfield;
-	
 
 	public WebElement getNametextfield() {
 		return nametextfield;
@@ -47,10 +49,13 @@ public class RegisterPage {
 	public WebElement getMobiletextfield() {
 		return mobiletextfield;	
 	}
-	public WebElement manalicheckbox() {
+	public WebElement getMalecheckbox() {
+		return malecheckbox;
+	}
+	public WebElement getmanalicheckbox() {
 		return manalicheckbox;	
 	}
-	public WebElement feedbacktextfield() {
+	public WebElement getfeedbacktextfield() {
 		return feedbacktextfield;
 	}
 }

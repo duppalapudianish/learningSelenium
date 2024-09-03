@@ -16,7 +16,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 //import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class WebdriverLibrary {
+import com.myntrajio.genric.commonlibrary.FrameworkConstant;
+
+public class WebdriverLibrary implements FrameworkConstant {
 	
 
 	public WebDriver driver;
@@ -73,10 +75,10 @@ public class WebdriverLibrary {
 	 * 
 	 * @param time
 	 */
-	public void waitUntilElementFound(long time) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	//public void waitUntilElementFound() {
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(waitduration));
 		
-	}
+//	}
 	/**
 	 * This method waits until element is visible on the web page
 	 * 
@@ -237,6 +239,11 @@ public class WebdriverLibrary {
 	public WebElement convertDynamicXpathToWebElement(String commonPath, String replaceData) {
 		String requiredPath = String.format(commonPath, replaceData);
 		return driver.findElement(By.xpath(requiredPath));
+	}
+
+	public void waitUntilElementFound() {
+		// TODO Auto-generated method stub
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(waitduration));	
 	}
 
 }
